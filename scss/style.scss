@@ -1,0 +1,39 @@
+.divcito {
+    border: 1px solid #333333;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    &.papita {
+        background-color:  green;
+    }
+    &.tomate {
+        background-color: red;
+    }
+    &.roquefort {
+        background-color: hotpink;
+    }
+    .hijito-papita {
+        background-color: rebeccapurple;
+        height: 20px;
+        width: 100%;
+        border: 10px dotted #41dd41;
+    }
+    .hijito-tomate {
+        background-color: rgb(153, 51, 93);
+        height: 20px;
+        width: 100%;
+        border: 10px dotted rgb(255, 244, 91);
+    }
+    .hijito1-roquefort {
+        background-color: rgb(114, 153, 51);
+        height: 20px;
+        width: 50%;
+        border: 10px dotted #a41;
+    }
+    .hijito2-roquefort {
+        background-color: rgb(51, 153, 144);
+        height: 20px;
+        width: 50%;
+        border: 10px dotted #a41;
+    }
+}

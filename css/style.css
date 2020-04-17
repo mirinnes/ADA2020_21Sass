@@ -1,0 +1,31 @@
+.divcito {
+  border: 1px solid #333333;
+  display: flex;
+  align-items: center;
+  height: 55px; }
+  .divcito.papita {
+    background-color: green; }
+  .divcito.tomate {
+    background-color: red; }
+  .divcito.roquefort {
+    background-color: hotpink; }
+  .divcito .hijito-papita {
+    background-color: rebeccapurple;
+    height: 20px;
+    width: 100%;
+    border: 10px dotted #41dd41; }
+  .divcito .hijito-tomate {
+    background-color: #99335d;
+    height: 20px;
+    width: 100%;
+    border: 10px dotted #fff45b; }
+  .divcito .hijito1-roquefort {
+    background-color: #729933;
+    height: 20px;
+    width: 50%;
+    border: 10px dotted #a41; }
+  .divcito .hijito2-roquefort {
+    background-color: #339990;
+    height: 20px;
+    width: 50%;
+    border: 10px dotted #a41; }
