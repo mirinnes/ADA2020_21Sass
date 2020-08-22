@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background-color: #151718;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.circulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.952);
+  border-radius: 50%;
+  border: 3px solid yellowgreen;
+  width: 300px;
+  height: 300px;
+  z-index: 0;
+  /*&:after {
+                content: '';
+                display: inline;
+                background-color: green;
+                height: 100%;
+                width: 100%;
+            }*/ }
+
+.circulo #cuerpo {
+  position: absolute;
+  top: 120px;
+  left: -130px;
+  z-index: 1; }
+
+.circulo #cabeza-desp, .circulo #cabeza-dorm {
+  position: absolute;
+  top: calc(120px + -50px);
+  left: calc(-130px + 20px); }
+
+.circulo #cabeza-dorm {
+  z-index: 2; }
+
+.circulo #cabeza-desp {
+  transition: all 0.3s linear;
+  display: inline;
+  z-index: 3;
+  opacity: 0;
+  top: calc(120px + -20px);
+  left: calc(-130px + 20px); }
+
+.circulo #cabeza-desp:target {
+  opacity: 100;
+  top: calc(120px + -50px);
+  left: calc(-130px + 20px); }
+
+.circulo #brazoD {
+  position: absolute;
+  top: calc(120px + 25px);
+  left: calc(-130px + 50px); }
+
+.circulo #brazoI {
+  position: absolute;
+  top: calc(120px + 25px);
+  left: calc(-130px + -30px); }
+
+.circulo #brazoD, .circulo #brazoI {
+  z-index: 3; }
+
+.circulo .actions {
+  display: inline; }
+
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: -10vw;
+  width: 10vw;
+  height: 100vh;
+  background-color: fuchsia; }
+
+#menu:target {
+  left: 0; }
+
+/*
+        // el + y el ~ (y el espacio-hijo-) es para el hermano/los hermanos siguientes
+        #cabeza-dorm:target + #cabeza-desp{
+            display: inline;
+        }
+        */
+/*
+
+*/

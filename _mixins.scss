@@ -1,0 +1,13 @@
+@import "./variables";
+
+@mixin display-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@mixin position($dist-cuerpo-top, $dist-cuerpo-left) {
+    top: calc(#{$position-top-cuerpo} + #{$dist-cuerpo-top});
+    left: calc(#{$position-left-cuerpo} + #{$dist-cuerpo-left});
+}
